@@ -1,0 +1,31 @@
+name: Request access to richardw7.github.io
+description: Paid access request for richardw7.github.io.
+title: "Access request: richardw7.github.io"
+labels: ["access-request"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <!-- entitlement_id: 2e83d0bd-66be-47ba-bb4d-119b705e585a -->
+        You are requesting paid access to **richardw7.github.io**.
+        After submitting this issue, you will receive a payment link.
+
+  - type: dropdown
+    id: entitlement_id
+    attributes:
+      label: Entitlement ID
+      description: This is selected automatically. Do not change it.
+      options:
+        - 2e83d0bd-66be-47ba-bb4d-119b705e585a
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Your email (optional)
+      description: We'll only use this if we need to contact you about the request.
+      placeholder: you@example.com
+    validations:
+      required: false
