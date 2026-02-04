@@ -1,0 +1,31 @@
+name: Request access to wlan-balancer
+description: Paid access request for wlan-balancer.
+title: "Access request: wlan-balancer"
+labels: ["access-request"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <!-- entitlement_id: e9a5bef3-b25d-4058-933f-8319964c6295 -->
+        You are requesting paid access to **wlan-balancer**.
+        After submitting this issue, you will receive a payment link.
+
+  - type: dropdown
+    id: entitlement_id
+    attributes:
+      label: Entitlement ID
+      description: This is selected automatically. Do not change it.
+      options:
+        - e9a5bef3-b25d-4058-933f-8319964c6295
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Your email (optional)
+      description: We'll only use this if we need to contact you about the request.
+      placeholder: you@example.com
+    validations:
+      required: false
