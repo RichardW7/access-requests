@@ -1,0 +1,31 @@
+name: Request access to clonehero-chart-generator
+description: Paid access request for clonehero-chart-generator.
+title: "Access request: clonehero-chart-generator"
+labels: ["access-request"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <!-- entitlement_id: cf4fc301-4a7c-4566-9bfe-ffdf0ff45e5c -->
+        You are requesting paid access to **clonehero-chart-generator**.
+        After submitting this issue, you will receive a payment link.
+
+  - type: dropdown
+    id: entitlement_id
+    attributes:
+      label: Entitlement ID
+      description: This is selected automatically. Do not change it.
+      options:
+        - cf4fc301-4a7c-4566-9bfe-ffdf0ff45e5c
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Your email (optional)
+      description: We'll only use this if we need to contact you about the request.
+      placeholder: you@example.com
+    validations:
+      required: false
